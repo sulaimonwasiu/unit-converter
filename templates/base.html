@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>{% block title %}Unit Converter{% endblock %}</title>
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    <div class="tabs">
+        <a href="{{ url_for('length') }}" class="tab {{ 'active' if request.endpoint == 'length' else '' }}" onclick="setActiveTab('length', '{{ url_for('length') }}')">Length</a>
+        <a href="{{ url_for('weight') }}" class="tab {{ 'active' if request.endpoint == 'weight' else '' }}" onclick="setActiveTab('weight', '{{ url_for('weight') }}')">Weight</a>
+        <a href="{{ url_for('temperature') }}" class="tab {{ 'active' if request.endpoint == 'temperature' else '' }}" onclick="setActiveTab('temperature', '{{ url_for('temperature') }}')">Temperature</a>
+    </div>
+    <div class="converter">
+        {% block content %}{% endblock %}
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

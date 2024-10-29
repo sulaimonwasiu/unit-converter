@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Length Converter{% endblock %}
+
+{% block content %}
+<div id="length" class="form active">
+    <form method="POST" action="{{ url_for('convert') }}">
+        <input type="hidden" name="category" value="length">
+        <div class="section">
+            <label>Enter the length to convert</label>
+            <div class="input-container">
+                <input type="number" name="value" placeholder="Value" required />
+            </div>
+        </div>
+        <div class="section">
+            <label>Unit to convert from</label>
+            <div class="input-container">
+                <select name="from_unit" required>
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="millimeter">Millimeter</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    <option value="yard">Yard</option>
+                    <option value="mile">Mile</option>
+                </select>
+            </div>
+        </div>
+        <div class="section">
+            <label>Unit to convert to</label>
+            <div class="input-container">
+                <select name="to_unit" required>
+                    <option value="meter">Meter</option>
+                    <option value="kilometer">Kilometer</option>
+                    <option value="centimeter">Centimeter</option>
+                    <option value="millimeter">Millimeter</option>
+                    <option value="inch">Inch</option>
+                    <option value="foot">Foot</option>
+                    <option value="yard">Yard</option>
+                    <option value="mile">Mile</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit">Convert</button>
+    </form>
+</div>
+{% endblock %}
