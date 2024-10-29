@@ -82,6 +82,6 @@ A simple and intuitive unit converter application built with Flask. This app all
 ## Contributing
 Contributions are welcome! If you have suggestions for improvements or want to add features, please fork the repository and submit a pull request.
 
-**Repository Link**:
-`https://github.com/sulaimonwasiu/unit-converter.git`
+**Project Link**:
+[Project URL](https://roadmap.sh/projects/unit-converter)
 
