@@ -75,7 +75,9 @@ A simple and intuitive unit converter application built with Flask. This app all
 
 ## Screenshots
 
-![Length Conversion](./screenshots/length.PNG)![Weight Conversion](./screenshots/weight.PNG)![Temperature Conversion](./screenshots/temperature.PNG)
+![Length Conversion](/screenshots/length.PNG?raw=true)
+![Weight Conversion](/screenshots/weight.PNG?raw=true)
+![Temperature Conversion](/screenshots/temperature.PNG?raw=true)
 
 ## Contributing
 Contributions are welcome! If you have suggestions for improvements or want to add features, please fork the repository and submit a pull request.
